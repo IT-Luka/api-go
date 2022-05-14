@@ -14,5 +14,4 @@ func main() {
 	routes.UserRoute(router)
 
 	router.Run("localhost:8080")
-
 }
