@@ -13,5 +13,5 @@ func main() {
 
 	routes.UserRoute(router)
 
-	router.Run("localhost:9001")
+	router.Run(":9001")
 }
