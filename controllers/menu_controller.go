@@ -54,7 +54,7 @@ func CreateMenu() gin.HandlerFunc {
 
 func GetAllMenus() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		ctx, cancel := context.WithTimeout(context.Background(), 100*time.Second)
+		ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 		var menus []models.Menu
 		defer cancel()
 
